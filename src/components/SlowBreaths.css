@@ -3,6 +3,28 @@
   src: url("../assets/fonts/sprat.woff2");
 }
 
+@keyframes inhale {
+  0% {
+    font-variation-settings: "wght" 20, "wdth" 120;
+    opacity: 0.5;
+  }
+  100% {
+    font-variation-settings: "wght" 100, "wdth" 120;
+    opacity: 1;
+  }
+}
+
+@keyframes exhale {
+  0% {
+    font-variation-settings: "wght" 100, "wdth" 120;
+    opacity: 1;
+  }
+  100% {
+    font-variation-settings: "wght" 20, "wdth" 120;
+    opacity: 0.5;
+  }
+}
+
 section {
   height: 100vh;
   width: 100vw;
@@ -19,4 +41,12 @@ section {
 
 section div {
   width: 5em;
+}
+
+section div.inhale {
+  animation: inhale 5s infinite alternate;
+}
+
+section div.exhale {
+  animation: exhale 5s infinite alternate;
 }
