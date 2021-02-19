@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Sprat";
+  src: url("../assets/fonts/sprat.woff2");
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  background-color: #222222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 9vmin;
+  text-align: center;
+}
+
+section div {
+  width: 5em;
+}
