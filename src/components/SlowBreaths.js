@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GlslCanvas from "glslCanvas";
 import "./SlowBreaths.css";
-import Displacement from "./displacement1.jpg";
+import Displacement from "../assets/images/displacement1.jpg";
 
 const frag = `#ifdef GL_ES
 precision highp float;
