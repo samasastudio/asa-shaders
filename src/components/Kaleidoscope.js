@@ -55,21 +55,26 @@ export default class Kaleidoscope extends Component {
     const canvas = document.querySelector("canvas");
     const sandbox = new GlslCanvas(canvas);
 
-    const getSize = () => {
+    const calcSize = () => {
       let ww = window.innerWidth;
       let wh = window.innerHeight;
       let dpi = window.devicePixelRatio;
     
       let s = Math.max(wh, ww);
     
-      canvas.width = s;
-      canvas.height = s;
+      canvas.width = s + dpi;
+      canvas.height = s + dpi;
 
       canvas.style.width = s + "px";
       canvas.style.height = s + "px";
     }
 
-    getSize();
+    calcSize();
+
+    window.addEventListener("resize", () => {
+      calcSize();
+    })
+    
     sandbox.load(frag);
     sandbox.setUniform("image", Image);
   }
