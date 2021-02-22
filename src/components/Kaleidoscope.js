@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import GlslCanvas from "glslCanvas";
 import "./Kaleidoscope.css";
-import Image from "../assets/images/light.jpg";
+import Image from "../assets/images/trails.jpg";
 
 const frag = `
 #ifdef GL_ES
@@ -54,6 +54,22 @@ export default class Kaleidoscope extends Component {
   componentDidMount() {
     const canvas = document.querySelector("canvas");
     const sandbox = new GlslCanvas(canvas);
+
+    const getSize = () => {
+      let ww = window.innerWidth;
+      let wh = window.innerHeight;
+      let dpi = window.devicePixelRatio;
+    
+      let s = Math.max(wh, ww);
+    
+      canvas.width = s;
+      canvas.height = s;
+
+      canvas.style.width = s + "px";
+      canvas.style.height = s + "px";
+    }
+
+    getSize();
     sandbox.load(frag);
     sandbox.setUniform("image", Image);
   }
