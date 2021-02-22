@@ -48,7 +48,7 @@ void main(void)
     angle *= PI * 2.0;
     
     vec2 point = vec2(radius * cos(angle), radius * sin(angle));
-    point *= vec2(1.0, 0.666);
+    point *= vec2(1.0, 1000.0 / 1500.0);
     point = fract(point);
     
     vec4 color = texture2D(image, point);
