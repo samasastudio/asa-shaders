@@ -9,7 +9,7 @@
   src: url("../assets/fonts/mazius-review-extra-italic.woff2");
 }
 
-body {
+.kaleidoscope  {
   font-family: Marius Review;
   font-size: 32px;
   line-height: 1.5;
@@ -18,7 +18,7 @@ body {
   color: #111;
 }
 
-div.info {
+.kaleidoscope div.info {
   position: fixed;
   top: 48px;
   right: 48px;
@@ -33,28 +33,28 @@ div.info {
   justify-content: space-between;
 }
 
-h1 {
+.kaleidoscope h1 {
   font-size:78px;
   font-style: italic;
   line-height: 1.1;
   margin: 0px;
 }
 
-p {
+.kaleidoscope p {
   margin: 10px 0px;
 }
 
-nav {
+.kaleidoscope nav {
   display: flex;
   flex-direction: column;
 }
 
-nav a {
+.kaleidoscope nav a {
   color: #0044ff;
   text-decoration: none;
 }
 
-div.canvas-holder {
+.kaleidoscope div.canvas-holder {
   position: fixed;
   top: 0;
   left: 0;
@@ -62,7 +62,7 @@ div.canvas-holder {
   height: 100vh;
 }
 
-div.canvas-holder canvas {
+.kaleidoscope div.canvas-holder canvas {
   position: fixed;
   top: 50%;
   left: 50%;

@@ -52,7 +52,7 @@ export default class SlowBreaths extends Component {
 
   render() {
     return (
-      <div>
+      <div className="slowBreath">
         <canvas width="1025" height="1024"></canvas>
         <section>
           <div className="inhale">Inhale Deeply</div>

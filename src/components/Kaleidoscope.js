@@ -76,7 +76,7 @@ export default class Kaleidoscope extends Component {
 
   render() {
     return (
-      <div>
+      <div className="kaleidoscope">
         <div className="canvas-holder">
           <canvas></canvas>
         </div>
