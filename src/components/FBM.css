@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Sprat";
+  src: url("../assets/fonts/sprat.woff2")
+}
+
+.fbm {
+  font-family: "Sprat";
+  font-size: 40px;
+  line-height: 1.25;
+  font-variation-settings: "wght" 100 "wdth" 10;
+
+  background-color: #222222;
+  color: #fff;
+  min-height: 100vh;
+}
