@@ -78,7 +78,8 @@ export default class Kaleidoscope extends Component {
         let wh = window.innerHeight;
         let dpi = window.devicePixelRatio;
 
-        let s = Math.max(wh, ww + 500);
+        //can add 500 offset here for side nav
+        let s = Math.max(wh, ww + 100);
 
         canvas.width = s + dpi;
         canvas.height = s + dpi;
@@ -112,7 +113,7 @@ export default class Kaleidoscope extends Component {
         <div className="canvas-holder">
           <canvas onClick={this.nextImage}></canvas>
         </div>
-        <div className="info">
+        {/* <div className="info">
           <header>
             <h1>Sam Asa Johnson</h1>
             <p>Software Engineer // Sound Designer</p>
@@ -122,7 +123,7 @@ export default class Kaleidoscope extends Component {
             <a href="#">Unsplash</a>
             <a href="#">500px</a>
           </nav>
-        </div>
+        </div> */}
       </div>
     );
   }

@@ -66,5 +66,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(calc(-50% - 250px), -50%);
+  /* used to center canvas */
+  /* transform: translate(calc(-50% - 50px), -50%); */
+  transform: translate(-50%, -50%);
 }
