@@ -5,11 +5,81 @@
 
 .fbm {
   font-family: "Sprat";
-  font-size: 40px;
+  font-size: 24px;
   line-height: 1.25;
-  font-variation-settings: "wght" 100 "wdth" 10;
-
+  font-variation-settings: "wght" 100, "wdth" 10;
   background-color: #222222;
   color: #fff;
   min-height: 100vh;
+  display: flex;
+  z-index: -1;
+}
+
+.fbm main {
+  flex: 1;
+  border: 1px solid white;
+
+  margin: 48px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.fbm h1 {
+  margin: 0;
+}
+
+.fbm h2 {
+  margin: 0;
+}
+
+.fbm header {
+  flex: 1;
+  padding: 32px;
+}
+
+.fbm footer {
+  padding: 32px;
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}
+
+.fbm a {
+  text-decoration: none;
+  color: #fff;
+  transition: font-variation-settings 0.5s;
+}
+
+.fbm a:hover {
+  font-variation-settings: "wght" 110, "wdth" 110;
+}
+
+.fbm a::before {
+
+  content: "";
+  display: inline-block;
+  background-color: white;
+  width: 0.6em;
+  height: 0.6em;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 0 0.4em 0 0;
+  transition: background-color 0.2s;
+}
+
+.fbm a:hover:before {
+  background-color: transparent;
+}
+
+canvas {
+  border: 1px solid red;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vmax;
+  height: 100vmax;
+  pointer-events: none;
+  z-index: 0;
 }
