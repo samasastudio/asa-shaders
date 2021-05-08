@@ -54,9 +54,9 @@ void main(void)
     gl_FragColor = color;
 }`;
 
-const images = [Image1, Image2, Image3];
+const imgList = [Image1, Image2, Image3];
 
-const nextImage = (images, sandbox) => {
+export const nextImage = (images, sandbox) => {
   const next = images.shift();
   sandbox.setUniform("image", next);
   images.push(next);
@@ -64,7 +64,7 @@ const nextImage = (images, sandbox) => {
 
 export const renderKS = () => {
   const canvas = document.querySelector("canvas");
-  const sandbox = new GlslCanvas(canvas);
+  const fragSandbox = new GlslCanvas(canvas);
   const calcSize = () => {
     let ww = window.innerWidth;
     let wh = window.innerHeight;
@@ -86,6 +86,6 @@ export const renderKS = () => {
     calcSize();
   });
 
-  sandbox.load(frag);
-  nextImage(images, sandbox);
+  fragSandbox.load(frag);
+  nextImage(imgList, fragSandbox);
 };

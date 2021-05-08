@@ -1,10 +1,10 @@
 import "./App.css";
-import Kaleidoscope from "./components/Kaleidoscope";
+import { Kaleidoscope } from "./components/Kaleidoscope";
 import SlowBreaths from "./components/SlowBreaths";
 import { FBM } from "./components/FBM";
 
 function App() {
-  return <FBM></FBM>;
+  return <Kaleidoscope />;
 }
 
 export default App;
