@@ -4,7 +4,6 @@ import { renderFBM } from "../fragments/fbmFrag"
 
 export const FBM = () => {
   useEffect(renderFBM, []);
-
   return (
     <div className="fbm">
       <main>
