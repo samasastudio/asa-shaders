@@ -156,9 +156,9 @@ export default class FBM extends Component {
             <h2>Software Engineer</h2>
           </header>
           <footer>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">Contract</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Github</a>
           </footer>
         </main>
       </div>
