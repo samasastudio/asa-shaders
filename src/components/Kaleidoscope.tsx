@@ -9,7 +9,7 @@ export const Kaleidoscope : FunctionComponent<{}> = (props) : JSX.Element => {
       <div className="canvas-holder">
         <canvas></canvas>
       </div>
-      {/* <div className="info">
+      <div className="info">
           <header>
             <h1>Sam Asa Johnson</h1>
             <p>Software Engineer // Sound Designer</p>
@@ -19,7 +19,7 @@ export const Kaleidoscope : FunctionComponent<{}> = (props) : JSX.Element => {
             <a href="#">Unsplash</a>
             <a href="#">500px</a>
           </nav>
-        </div> */}
+        </div>
     </div>
   );
 };

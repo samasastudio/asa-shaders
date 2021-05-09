@@ -2,6 +2,7 @@ import GlslCanvas from "glslCanvas";
 import Image1 from "../assets/images/trails.jpg";
 import Image2 from "../assets/images/flowers.jpg";
 import Image3 from "../assets/images/light.jpg";
+import { windowSizer } from "../utils/windowSizer"
 
 const frag = `
 #ifdef GL_ES
@@ -65,25 +66,11 @@ export const nextImage = (images : string[], sandbox: typeof GlslCanvas) : void 
 export const renderKS = () : void => {
   const canvas = document.querySelector("canvas");
   const fragSandbox = new GlslCanvas(canvas);
-  const calcSize = () => {
-    let ww = window.innerWidth;
-    let wh = window.innerHeight;
-    let dpi = window.devicePixelRatio;
 
-    //can add 500 offset here for side nav
-    let s = Math.max(wh, ww + 100);
-
-    canvas.width = s + dpi;
-    canvas.height = s + dpi;
-
-    canvas.style.width = s + "px";
-    canvas.style.height = s + "px";
-  };
-
-  calcSize();
+  windowSizer(canvas, 100);
 
   window.addEventListener("resize", () => {
-    calcSize();
+    windowSizer(canvas, 100);
   });
 
   fragSandbox.load(frag);
