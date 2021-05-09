@@ -3,7 +3,7 @@
   src: url("../assets/fonts/Avara-Black.woff2");
 }
 
-.luridDream {
+.asa {
   font-family: "Avara";
   font-size: 24px;
   line-height: 1.25;
@@ -26,7 +26,7 @@
   z-index: -1;
 }
 
-.luridDream main {
+.asa main {
   flex: 1;
   margin: 48px;
   display: flex;
@@ -34,34 +34,34 @@
   z-index: 1;
 }
 
-.luridDream h1 {
+.asa h1 {
   margin: 0;
 }
 
-.luridDream h2 {
+.asa h2 {
   margin: 0;
 }
 
-.luridDream header {
+.asa header {
   flex: 1;
 }
 
-.luridDream footer {
+.asa footer {
   padding: 32px;
   display: flex;
   flex-direction: column;
 }
 
-.luridDream a {
+.asa a {
   text-decoration: none;
   transition: font-variation-settings 0.5s;
 }
 
-.luridDream a:hover {
+.asa a:hover {
   font-variation-settings: "wght" 110, "wdth" 110;
 }
 
-.luridDream a::before {
+.asa a::before {
   content: "";
   display: inline-block;
   background-color: #222;
@@ -73,11 +73,11 @@
   transition: background-color 0.2s;
 }
 
-.luridDream a:hover:before {
+.asa a:hover:before {
   background-color: transparent;
 }
 
-.luridDream canvas {
+.asa canvas {
   border: 1px solid red;
   position: fixed;
   top: 50%;

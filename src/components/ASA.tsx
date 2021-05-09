@@ -1,15 +1,15 @@
 import React, { FunctionComponent, useEffect } from "react";
-import "./LuridDream.css";
+import "./ASA.css";
 import { renderLD } from "../fragments/luridDreamFrag";
 
-export const LuridDream : FunctionComponent<{}> = (props) : JSX.Element => {
+export const ASA : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(() => {
     if (window.innerWidth > 410) {
-      renderLD("luridDream");
+      renderLD("asa");
     }
   }, []);
   return (
-    <div className="luridDream" style={{color: "#222"}}>
+    <div className="asa" style={{color: "#222"}}>
       <main style={{border: "1px solid #222"}}>
         <header>
           <div style={{width: '50%', padding: '32px'}}>
@@ -29,11 +29,7 @@ export const LuridDream : FunctionComponent<{}> = (props) : JSX.Element => {
 };
 
 //TODO:
-// 0. rename LuridDream component to ASA along with div className/styles
 // 1. creat utils for fragments
-// 2. make rendering functions take in class name
-// 3. add typing to current functions & components
-// 4. make all pass type errors
 // 5. add two new shaders
 // 6. create array of rendering functions for shaders
 // 7. create handleClick function for component
