@@ -108,10 +108,10 @@ void main(void)
 }
 `;
 
-export const renderFBM = () => {
+export const renderFBM = (className: string) : void => {
   const canvas = document.createElement("canvas");
   const sandbox = new GlslCanvas(canvas);
-  document.getElementsByClassName("fbm")[0].appendChild(canvas);
+  document.getElementsByClassName(className)[0].appendChild(canvas);
 
   const sizer = () => {
     let ww = window.innerWidth;

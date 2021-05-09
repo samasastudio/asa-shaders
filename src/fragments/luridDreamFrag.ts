@@ -56,10 +56,10 @@ void main(void)
     gl_FragColor = color;
 }`
 
-export const renderLD = () => {
+export const renderLD = (className: string) : void => {
   const canvas = document.createElement("canvas");
   const sandbox = new GlslCanvas(canvas);
-  document.getElementsByClassName("luridDream")[0].appendChild(canvas);
+  document.getElementsByClassName(className)[0].appendChild(canvas);
 
   const sizer = () => {
     let ww = window.innerWidth;

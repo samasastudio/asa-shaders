@@ -56,13 +56,13 @@ void main(void)
 
 const imgList = [Image1, Image2, Image3];
 
-export const nextImage = (images, sandbox) => {
+export const nextImage = (images : string[], sandbox: typeof GlslCanvas) : void => {
   const next = images.shift();
   sandbox.setUniform("image", next);
   images.push(next);
 };
 
-export const renderKS = () => {
+export const renderKS = () : void => {
   const canvas = document.querySelector("canvas");
   const fragSandbox = new GlslCanvas(canvas);
   const calcSize = () => {
