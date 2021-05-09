@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { FunctionComponent, useEffect } from "react";
 import "./Kaleidoscope.css";
 import { renderKS } from "../fragments/kaleidoscopeFrag";
 
-export const Kaleidoscope = () => {
+export const Kaleidoscope : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(renderKS, []);
   return (
     <div className="kaleidoscope" onClick={() => renderKS()}>

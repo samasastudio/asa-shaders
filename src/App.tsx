@@ -3,8 +3,9 @@ import { Kaleidoscope } from "./components/Kaleidoscope";
 import { SlowBreaths } from "./components/SlowBreaths";
 import { FBM } from "./components/FBM";
 import { LuridDream } from "./components/LuridDream";
+import { FunctionComponent } from "react";
 
-function App() {
+const App : FunctionComponent<{}> = (props) : JSX.Element => {
   return <LuridDream />;
 }
 

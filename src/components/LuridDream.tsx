@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { FunctionComponent, useEffect } from "react";
 import "./LuridDream.css";
 import { renderLD } from "../fragments/luridDreamFrag";
 
-export const LuridDream = () => {
+export const LuridDream : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(() => {
     if (window.innerWidth > 410) {
       renderLD();

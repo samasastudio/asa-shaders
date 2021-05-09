@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { FunctionComponent, useEffect } from "react";
 import "./SlowBreaths.css";
 import { renderSlowBreaths } from "../fragments/slowBreathsFrag";
 
-export const SlowBreaths = () => {
+export const SlowBreaths : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(renderSlowBreaths, []);
   return (
     <div className="slowBreath">

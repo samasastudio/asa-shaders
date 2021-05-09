@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { FunctionComponent, useEffect } from "react";
 import "./FBM.css";
 import { renderFBM } from "../fragments/fbmFrag"
 
-export const FBM = () => {
+export const FBM : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(renderFBM, []);
   return (
     <div className="fbm">
