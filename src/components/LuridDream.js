@@ -11,14 +11,19 @@ export const LuridDream = () => {
   return (
     <div className="luridDream">
       <main>
-        <header>
-          <h1>Sam Johnson</h1>
-          <h2>Software Engineer</h2>
+        <header style={{display: 'flex'}}>
+          <div style={{width: '50%'}}>
+            <h1>Sam Johnson</h1>
+            <h2>Software Engineer</h2>
+          </div>
+          <div style={{width: '50%', textAlign: 'right', backgroundColor: 'RGBA(255, 242, 234, 0.25)'}}>
+            <span>hello</span>
+          </div>
         </header>
         <footer>
-          <a href="#">Projects</a>
-          <a href="#">About</a>
-          <a href="#">Github</a>
+          <a href="https://parsifyapp.herokuapp.com/">Parsify</a>
+          <a href="https://github.com/samasastudio">Github</a>
+          <a href="https://www.linkedin.com/in/sam-asa-johnson/">About</a>
         </footer>
       </main>
     </div>
