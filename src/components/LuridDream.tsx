@@ -27,3 +27,13 @@ export const LuridDream = () => {
     </div>
   );
 };
+
+//TODO:
+// 0. rename LuridDream component to ASA along with div className/styles
+// 1. creat utils for fragments
+// 2. make rendering functions take in class name
+// 3. add typing to current functions & components
+// 4. make all pass type errors
+// 5. add two new shaders
+// 6. create array of rendering functions for shaders
+// 7. create handleClick function for component
