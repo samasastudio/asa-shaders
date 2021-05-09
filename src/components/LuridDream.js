@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 import "./LuridDream.css";
-import { renderLD } from "../fragments/luridDreamFrag"
+import { renderLD } from "../fragments/luridDreamFrag";
 
 export const LuridDream = () => {
-  useEffect(renderLD, []);
+  useEffect(() => {
+    if (window.innerWidth > 410) {
+      renderLD();
+    }
+  }, []);
   return (
     <div className="luridDream">
       <main>

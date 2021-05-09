@@ -1,15 +1,28 @@
 @font-face {
-  font-family: "Sprat";
-  src: url("../assets/fonts/sprat.woff2")
+  font-family: "Avara";
+  src: url("../assets/fonts/Avara-Black.woff2");
 }
 
 .luridDream {
-  font-family: "Sprat";
+  font-family: "Avara";
   font-size: 24px;
   line-height: 1.25;
   font-variation-settings: "wght" 100, "wdth" 10;
-  background-color: #222222;
-  color: #fff;
+  background: #c6ffdd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #222;
   min-height: 100vh;
   display: flex;
   z-index: -1;
@@ -17,7 +30,7 @@
 
 .luridDream main {
   flex: 1;
-  border: 1px solid white;
+  border: 1px solid #222;
 
   margin: 48px;
   display: flex;
@@ -40,14 +53,14 @@
 
 .luridDream footer {
   padding: 32px;
-  border-top: 1px solid white;
+  border-top: 1px solid #222;
   display: flex;
   flex-direction: column;
 }
 
 .luridDream a {
   text-decoration: none;
-  color: #fff;
+  color: #222;
   transition: font-variation-settings 0.5s;
 }
 
@@ -56,13 +69,12 @@
 }
 
 .luridDream a::before {
-
   content: "";
   display: inline-block;
-  background-color: white;
+  background-color: #222;
   width: 0.6em;
   height: 0.6em;
-  border: 2px solid white;
+  border: 2px solid #21d8aa;
   border-radius: 50%;
   margin: 0 0.4em 0 0;
   transition: background-color 0.2s;
@@ -82,4 +94,17 @@
   height: 100vmax;
   pointer-events: none;
   z-index: 0;
+  background: #c6ffdd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f7797d,
+    #fbd786,
+    #c6ffdd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
