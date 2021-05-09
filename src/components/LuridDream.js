@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import "./ASA.css";
-import { renderFBM } from "../fragments/fbmFrag"
+import "./LuridDream.css";
+import { renderLD } from "../fragments/luridDreamFrag"
 
-export const ASA = () => {
-  useEffect(renderFBM, []);
+export const LuridDream = () => {
+  useEffect(renderLD, []);
   return (
-    <div className="fbm">
+    <div className="luridDream">
       <main>
         <header>
           <h1>Sam Johnson</h1>

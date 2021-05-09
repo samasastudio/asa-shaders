@@ -3,7 +3,7 @@
   src: url("../assets/fonts/sprat.woff2")
 }
 
-.asa {
+.luridDream {
   font-family: "Sprat";
   font-size: 24px;
   line-height: 1.25;
@@ -15,7 +15,7 @@
   z-index: -1;
 }
 
-.asa main {
+.luridDream main {
   flex: 1;
   border: 1px solid white;
 
@@ -25,37 +25,37 @@
   z-index: 1;
 }
 
-.asa h1 {
+.luridDream h1 {
   margin: 0;
 }
 
-.asa h2 {
+.luridDream h2 {
   margin: 0;
 }
 
-.asa header {
+.luridDream header {
   flex: 1;
   padding: 32px;
 }
 
-.asa footer {
+.luridDream footer {
   padding: 32px;
   border-top: 1px solid white;
   display: flex;
   flex-direction: column;
 }
 
-.asa a {
+.luridDream a {
   text-decoration: none;
   color: #fff;
   transition: font-variation-settings 0.5s;
 }
 
-.asa a:hover {
+.luridDream a:hover {
   font-variation-settings: "wght" 110, "wdth" 110;
 }
 
-.asa a::before {
+.luridDream a::before {
 
   content: "";
   display: inline-block;
@@ -68,11 +68,11 @@
   transition: background-color 0.2s;
 }
 
-.asa a:hover:before {
+.luridDream a:hover:before {
   background-color: transparent;
 }
 
-.asa canvas {
+.luridDream canvas {
   border: 1px solid red;
   position: fixed;
   top: 50%;

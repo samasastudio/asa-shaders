@@ -1,4 +1,8 @@
-export const luridDream = `
+import GlslCanvas from "glslCanvas";
+import image from "../assets/images/Bang-3.jpg"
+
+
+const frag = `
 #ifdef GL_ES
 precision highp float;
 #endif
@@ -51,3 +55,33 @@ void main(void)
     vec4 color = redChannel + greenChannel + blueChannel;
     gl_FragColor = color;
 }`
+
+export const renderLD = () => {
+  const canvas = document.createElement("canvas");
+  const sandbox = new GlslCanvas(canvas);
+  document.getElementsByClassName("luridDream")[0].appendChild(canvas);
+
+  const sizer = () => {
+    let ww = window.innerWidth;
+    let wh = window.innerHeight;
+    let dpi = window.devicePixelRatio;
+
+    //can add 500 offset here for side nav
+    let s = Math.max(wh, ww);
+
+    canvas.width = s * dpi;
+    canvas.height = s * dpi;
+
+    canvas.style.width = s + "px";
+    canvas.style.height = s + "px";
+  };
+
+  sizer();
+
+  window.addEventListener("resize", () => {
+    sizer();
+  });
+
+  sandbox.load(frag);
+  sandbox.setUniform("u_image", image);
+}
