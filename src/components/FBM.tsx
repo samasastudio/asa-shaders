@@ -3,7 +3,7 @@ import "./FBM.css";
 import { renderFBM } from "../fragments/fbmFrag"
 
 export const FBM : FunctionComponent<{}> = (props) : JSX.Element => {
-  useEffect(renderFBM, []);
+  useEffect(() => renderFBM("fbm"), []);
   return (
     <div className="fbm">
       <main>

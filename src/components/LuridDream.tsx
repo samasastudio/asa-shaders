@@ -5,7 +5,7 @@ import { renderLD } from "../fragments/luridDreamFrag";
 export const LuridDream : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(() => {
     if (window.innerWidth > 410) {
-      renderLD();
+      renderLD("luridDream");
     }
   }, []);
   return (
