@@ -10,7 +10,7 @@ export const LuridDream = () => {
   }, []);
   return (
     <div className="luridDream">
-      <main>
+      <main style={{border: "1px solid #222"}}>
         <header>
           <div style={{width: '50%', padding: '32px'}}>
             <h1>Sam Johnson</h1>
@@ -18,7 +18,7 @@ export const LuridDream = () => {
             {window.innerWidth > 410 ? <p>Click to cycle web shaders</p> : null}
           </div>
         </header>
-        <footer>
+        <footer style={{borderTop: "1px solid #222"}}>
           <a href="https://parsifyapp.herokuapp.com/">Parsify</a>
           <a href="https://github.com/samasastudio">Github</a>
           <a href="https://www.linkedin.com/in/sam-asa-johnson/">About</a>
