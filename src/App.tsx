@@ -6,7 +6,7 @@ import { ASA } from "./components/ASA";
 import { FunctionComponent } from "react";
 
 const App : FunctionComponent<{}> = (props) : JSX.Element => {
-  return <Kaleidoscope />;
+  return <FBM />;
 }
 
 export default App;
