@@ -9,7 +9,7 @@ export const LuridDream = () => {
     }
   }, []);
   return (
-    <div className="luridDream">
+    <div className="luridDream" style={{color: "#222"}}>
       <main style={{border: "1px solid #222"}}>
         <header>
           <div style={{width: '50%', padding: '32px'}}>
@@ -19,9 +19,9 @@ export const LuridDream = () => {
           </div>
         </header>
         <footer style={{borderTop: "1px solid #222"}}>
-          <a href="https://parsifyapp.herokuapp.com/">Parsify</a>
-          <a href="https://github.com/samasastudio">Github</a>
-          <a href="https://www.linkedin.com/in/sam-asa-johnson/">About</a>
+          <a href="https://parsifyapp.herokuapp.com/" style={{color: "inherit"}}>Parsify</a>
+          <a href="https://github.com/samasastudio" style={{color: "inherit"}}>Github</a>
+          <a href="https://www.linkedin.com/in/sam-asa-johnson/" style={{color: "inherit"}}>About</a>
         </footer>
       </main>
     </div>

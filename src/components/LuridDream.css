@@ -21,8 +21,6 @@
     #fbd786,
     #c6ffdd
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  color: #222;
   min-height: 100vh;
   display: flex;
   z-index: -1;
@@ -56,7 +54,6 @@
 
 .luridDream a {
   text-decoration: none;
-  color: #222;
   transition: font-variation-settings 0.5s;
 }
 
