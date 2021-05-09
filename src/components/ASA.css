@@ -3,7 +3,7 @@
   src: url("../assets/fonts/sprat.woff2")
 }
 
-.fbm {
+.asa {
   font-family: "Sprat";
   font-size: 24px;
   line-height: 1.25;
@@ -15,7 +15,7 @@
   z-index: -1;
 }
 
-.fbm main {
+.asa main {
   flex: 1;
   border: 1px solid white;
 
@@ -25,37 +25,37 @@
   z-index: 1;
 }
 
-.fbm h1 {
+.asa h1 {
   margin: 0;
 }
 
-.fbm h2 {
+.asa h2 {
   margin: 0;
 }
 
-.fbm header {
+.asa header {
   flex: 1;
   padding: 32px;
 }
 
-.fbm footer {
+.asa footer {
   padding: 32px;
   border-top: 1px solid white;
   display: flex;
   flex-direction: column;
 }
 
-.fbm a {
+.asa a {
   text-decoration: none;
   color: #fff;
   transition: font-variation-settings 0.5s;
 }
 
-.fbm a:hover {
+.asa a:hover {
   font-variation-settings: "wght" 110, "wdth" 110;
 }
 
-.fbm a::before {
+.asa a::before {
 
   content: "";
   display: inline-block;
@@ -68,11 +68,11 @@
   transition: background-color 0.2s;
 }
 
-.fbm a:hover:before {
+.asa a:hover:before {
   background-color: transparent;
 }
 
-.fbm canvas {
+.asa canvas {
   border: 1px solid red;
   position: fixed;
   top: 50%;
