@@ -29,7 +29,6 @@ export const ASA : FunctionComponent<{}> = (props) : JSX.Element => {
 };
 
 //TODO:
-// 1. creat utils for fragments
 // 5. add two new shaders
 // 6. create array of rendering functions for shaders
 // 7. create handleClick function for component
