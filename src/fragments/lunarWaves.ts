@@ -86,8 +86,8 @@ export const renderLW = (className: string): void => {
   // canvas.width = s + dpi;
   // canvas.height = s + dpi;
 
-  canvas.style.width = "1920px";
-  canvas.style.height = "1080px";
+  canvas.style.width = `${window.innerWidth + (window.innerWidth * 0.1)}px`;
+  canvas.style.height = `${window.innerHeight + (window.innerHeight * 0.1)}px`;
 
   sandbox.load(frag);
   sandbox.setUniform("u_image", image);
