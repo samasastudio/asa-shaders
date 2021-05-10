@@ -59,7 +59,7 @@ void main(void)
     float x = floor(uv.x * 64.0);
     float y = floor(uv.y * 64.0);
     
-    vec2 distortion = 0.01 * vec2(
+    vec2 distortion = 0.02 * vec2(
     sin(u_time * 0.5 + x * 1.0 + y * 1.5), 
     cos(u_time * 0.2 + x * 1.1 + y * 2.0)
     );

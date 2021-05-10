@@ -1,11 +1,11 @@
 import React, { FunctionComponent, useEffect } from "react";
 import "./ASA.css";
-import { renderLW } from "../fragments/lunarWaves";
+import { renderWS } from "../fragments/writeStream";
 
 export const ASA : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(() => {
     if (window.innerWidth > 410) {
-      renderLW("asa");
+      renderWS("asa");
     }
   }, []);
   return (
@@ -29,6 +29,5 @@ export const ASA : FunctionComponent<{}> = (props) : JSX.Element => {
 };
 
 //TODO:
-// 5. add two new shaders
 // 6. create array of rendering functions for shaders
 // 7. create handleClick function for component
