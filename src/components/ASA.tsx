@@ -1,11 +1,11 @@
 import React, { FunctionComponent, useEffect } from "react";
 import "./ASA.css";
-import { renderLD } from "../fragments/luridDreamFrag";
+import { renderWS } from "../fragments/writeStream";
 
 export const ASA : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(() => {
     if (window.innerWidth > 410) {
-      renderLD("asa");
+      renderWS("asa");
     }
   }, []);
   return (
