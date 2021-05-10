@@ -1,5 +1,6 @@
 import GlslCanvas from "glslCanvas";
-import image from "../assets/images/Bang-3.jpg"
+import image from "../assets/images/Bang-3.jpg";
+import { windowSizer } from "../utils/windowSizer";
 
 
 const frag = `
@@ -56,30 +57,15 @@ void main(void)
     gl_FragColor = color;
 }`
 
-export const renderLD = (className: string) : void => {
+export const renderLD = (className: string): void => {
   const canvas = document.createElement("canvas");
   const sandbox = new GlslCanvas(canvas);
   document.getElementsByClassName(className)[0].appendChild(canvas);
 
-  const sizer = () => {
-    let ww = window.innerWidth;
-    let wh = window.innerHeight;
-    let dpi = window.devicePixelRatio;
-
-    //can add 500 offset here for side nav
-    let s = Math.max(wh, ww);
-
-    canvas.width = s * dpi;
-    canvas.height = s * dpi;
-
-    canvas.style.width = s + "px";
-    canvas.style.height = s + "px";
-  };
-
-  sizer();
+  windowSizer(canvas);
 
   window.addEventListener("resize", () => {
-    sizer();
+    windowSizer(canvas);
   });
 
   sandbox.load(frag);
