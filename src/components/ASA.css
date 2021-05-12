@@ -64,7 +64,7 @@
 .asa a::before {
   content: "";
   display: inline-block;
-  background-color: #222;
+  background-color: white;
   width: 0.6em;
   height: 0.6em;
   border: 2px solid white;

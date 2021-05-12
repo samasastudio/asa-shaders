@@ -1,16 +1,22 @@
 import React, { FunctionComponent, useEffect } from "react";
 import "./ASA.css";
+import { renderLD } from "../fragments/luridDreamFrag";
+import { renderBS } from "../fragments/blackSnow";
+import { renderLW } from "../fragments/lunarWaves"
+import { renderSB } from "../fragments/slowBreathsAsa";
 import { renderWS } from "../fragments/writeStream";
+
+const shaderList = [renderLD, renderBS, renderWS, renderSB, renderWS]
 
 export const ASA : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(() => {
     if (window.innerWidth > 410) {
-      renderWS("asa");
+      renderLD("asa");
     }
   }, []);
   return (
-    <div className="asa" style={{color: "#222"}}>
-      <main style={{border: "1px solid #222"}}>
+    <div className="asa" style={{color: "white"}}>
+      <main style={{border: "1px solid white"}}>
         <header>
           <div style={{width: '50%', padding: '32px'}}>
             <h1>Sam Johnson</h1>
@@ -18,7 +24,7 @@ export const ASA : FunctionComponent<{}> = (props) : JSX.Element => {
             {window.innerWidth > 410 ? <p>Click to cycle web shaders</p> : null}
           </div>
         </header>
-        <footer style={{borderTop: "1px solid #222"}}>
+        <footer style={{borderTop: "1px solid white"}}>
           <a href="https://parsifyapp.herokuapp.com/" style={{color: "inherit"}}>Parsify</a>
           <a href="https://github.com/samasastudio" style={{color: "inherit"}}>Github</a>
           <a href="https://www.linkedin.com/in/sam-asa-johnson/" style={{color: "inherit"}}>About</a>
