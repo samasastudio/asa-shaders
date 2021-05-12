@@ -6,7 +6,13 @@ import { renderLW } from "../fragments/lunarWaves"
 import { renderSB } from "../fragments/slowBreathsAsa";
 import { renderWS } from "../fragments/writeStream";
 
-const shaderList = [renderLD, renderBS, renderWS, renderSB, renderWS]
+const shaderList = [renderLD, renderBS, renderWS, renderSB, renderLW];
+
+const cycleShaders = (list, className) => {
+  const shader = list.shift();
+  shader(className);
+  list.push(shader);
+}
 
 export const ASA : FunctionComponent<{}> = (props) : JSX.Element => {
   useEffect(() => {
@@ -17,7 +23,7 @@ export const ASA : FunctionComponent<{}> = (props) : JSX.Element => {
   return (
     <div className="asa" style={{color: "white"}}>
       <main style={{border: "1px solid white"}}>
-        <header>
+        <header onClick={() => cycleShaders(shaderList, "asa")}>
           <div style={{width: '50%', padding: '32px'}}>
             <h1>Sam Johnson</h1>
             <h2>Software Engineer</h2>
