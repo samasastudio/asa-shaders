@@ -32,14 +32,40 @@ export const ASA: FunctionComponent<{}> = (props): JSX.Element => {
     setShaders(list);
   };
 
+  const isDesktop = window.innerWidth > 410;
+
   return (
     <div className="asa" style={{ color: "white" }}>
       <main style={{ border: "1px solid white" }}>
         <header onClick={() => cycleShaders(shaders, "asa")}>
-          <div style={{ width: "50%", padding: "32px" }}>
-            <h1>Sam Johnson</h1>
-            <h2>Software Engineer</h2>
-            {window.innerWidth > 410 ? <p>Click to cycle web shaders</p> : null}
+          <div style={{ width: "100%", height: "100%", display: "flex" }}>
+            <div style={{ width: "65%", padding: "32px" }}>
+              <h1>Sam Johnson</h1>
+              <h2>Software Engineer</h2>
+              {isDesktop ? <p>Click to cycle web shaders</p> : null}
+            </div>
+            {!isDesktop ? null : (
+              <div
+                style={{
+                  width: "35%",
+                  height: "100%",
+                  display: "flex",
+                  fontSize: "18px",
+                  textAlign: "right",
+                  backgroundColor: "RGBA(255, 242, 234, 0.25)",
+                }}
+              >
+                <article style={{padding: "30px"}}>
+                  From Nashville to Los Angeles to Austin, I have dedicated my
+                  career to building user experiences that help both artists and
+                  students explore new ideas through production, software and
+                  art. When I am not collaborating on testing, designing and
+                  developing music education applications, I spend my time
+                  finding ways to support the music and film community here or
+                  simply jamming, hiking and rock climbing. ☁️
+                </article>
+              </div>
+            )}
           </div>
         </header>
         <footer style={{ borderTop: "1px solid white" }}>
@@ -50,16 +76,16 @@ export const ASA: FunctionComponent<{}> = (props): JSX.Element => {
             Parsify
           </a>
           <a
+            href="https://www.middy.com/"
+            style={{ color: "inherit" }}
+          >
+            Middy
+          </a>
+          <a
             href="https://github.com/samasastudio"
             style={{ color: "inherit" }}
           >
             Github
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sam-asa-johnson/"
-            style={{ color: "inherit" }}
-          >
-            About
           </a>
         </footer>
       </main>

@@ -1,7 +1,7 @@
 import GlslCanvas from "glslCanvas";
 import { windowSizer } from "../utils/windowSizer";
 
-const frag = `
+export const frag = `
 #ifdef GL_ES
 precision highp float;
 #endif
