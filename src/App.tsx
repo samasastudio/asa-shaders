@@ -10,7 +10,7 @@ import { frag } from './fragments/fbmFrag'
 const App: FunctionComponent<{}> = (props): JSX.Element => {
   return (
     <div style={{ width: "100vw", height: "100vh", backgroundColor: "black" }}>
-      <ShaderCanvas width={100} height={100} frag={frag}/>
+      <ShaderCanvas width={"100%"} height={"100%"} frag={frag}/>
     </div>
   );
 };
