@@ -3,7 +3,7 @@ import image from "../assets/images/Bang-3.jpg";
 import { windowSizer } from "../utils/windowSizer";
 
 
-const frag = `
+export const frag = `
 #ifdef GL_ES
 precision highp float;
 #endif
