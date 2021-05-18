@@ -1,5 +1,4 @@
-import React, { FC, useEffect, useRef } from 'react';
-import {windowSizer } from "../utils/windowSizer"
+import { FC, useEffect, useRef } from 'react';
 import GlslCanvas from 'glslCanvas';
 
 interface CanvasProps {
