@@ -10,12 +10,12 @@ interface CanvasProps {
 
 export const ShaderCanvas: FC<CanvasProps> = (props): JSX.Element => {
 
-  const canvasRef = useRef();
-  const containerRef = useRef();
+  const canvasRef = useRef<HTMLCanvasElement>();
+  const containerRef = useRef<HTMLDivElement>();
 
   useEffect(() => {
-    const node = canvasRef.current as any;
-    const container = containerRef.current as any;
+    const node = canvasRef.current;
+    const container = containerRef.current;
     const sandbox = new GlslCanvas(canvasRef.current);
     node.width = container.clientWidth + window.devicePixelRatio;
     node.height = container.clientHeight + window.devicePixelRatio;
