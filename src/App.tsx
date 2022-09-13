@@ -11,7 +11,7 @@ import image from "./assets/images/Bang-3.jpg";
 const App: FC<{}> = (props): JSX.Element => {
   return (
     <div style={{ width: "100vw", height: "100vh", backgroundColor: "black" }}>
-      <ShaderCanvas frag={frag} setUniforms={{u_image: image}}/>
+      <ASA/>
     </div>
   );
 };
