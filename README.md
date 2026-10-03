@@ -36,14 +36,9 @@ Legacy Firebase Hosting is documented in [`docs/FIREBASE_LEGACY.md`](docs/FIREBA
 - **[ROADMAP](docs/ROADMAP.md)** — Milestones and product plan. Optional **Phase C** depth (shareable scene state, uniform/layer controls, presets—see Milestones 1–3 and the PRD) is tracked here so the simple playground can ship first.
 - **[AI-COLLAB](docs/AI-COLLAB.md)** — AI-assisted shader workflow, constraint cards, and workshop-oriented resources for collaborators.
 
-## Screenshots
+## Development Scripts
 
-### Dev Scripts
-
-`yarn dev` (or `yarn start`)
-
-Open [http://localhost:3000](http://localhost:3000)
-
-`yarn test`
-
-`yarn build`
+Run the following commands during local development:
+- Start development server: `yarn dev` (then open `http://localhost:3000`)
+- Run unit tests: `yarn test`
+- Build production bundle: `yarn build`
